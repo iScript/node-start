@@ -1,0 +1,21 @@
+<!DOCTYPE >
+<html>
+<title>hello node.js</title>
+
+</head>
+<body >
+<h2>错误报告：</h2>
+<%for(var i=0;i<errors.length;i++){ %>
+    <div>错误信息：<%= errors[i].message %> <br/>
+         详细信息：<%= JSON.stringify(errors[i]) %>
+    </div>
+<% } %>
+
+<p>网页将在5秒后自动跳转。</p>
+<script type="text/javascript">
+    setTimeout(function(){
+        window.location.href = "<%= backTo %>" ;
+    },5000);
+</script>
+</body>
+</html>

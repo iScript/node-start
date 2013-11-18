@@ -1,0 +1,15 @@
+{
+	"name": "nodeStart",
+	"version": "0.0.1",
+	"auth": "ykq",
+	"scripts": {
+	    "start": "node app"
+	},
+	"dependencies": {
+		"express" : "latest",
+		"connect-mongo": "latest",
+		"ejs" : "latest",
+		"mongoose" : "latest",
+		"socket.io" : "latest"
+	}
+}
